@@ -30,7 +30,7 @@ def CG(a, a1, b, b1, c, c1):
         return clebsch
 
 # returns 6j-symbol
-# a, b, c, d, e, f == j1, j2, j3, j4, j5, j6 
+# a, b, c, d, e, f = j1, j2, j3, j4, j5, j6 
 def sixj(a, b, c, d, e, f):
    
     def triangle(a, b, c):
