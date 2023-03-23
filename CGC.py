@@ -12,7 +12,8 @@ def fact(n):
 def CG(a, a1, b, b1, c, c1):
     
     if ( a1+b1!=c1 or a<abs(a1) or b<abs(b1) or c<abs(c1) 
-        or a<0 or b<0 or c<0 or a+b<c or abs(a-b)>c ):
+        or a<0 or b<0 or c<0 or a+b<c or abs(a-b)>c or a-a1!=int(a-a1)
+        or b-b1!=int(b-b1) ):
         return 0
     else:
         delta = math.sqrt(fact(a+b-c)*fact(a-b+c)*fact(-a+b+c)/fact(a+b+c+1))
